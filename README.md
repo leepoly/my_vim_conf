@@ -104,3 +104,12 @@ mv ~/.tmux.conf ~/.tmux.conf_bak
 ln -s $vimConf/tmux/.tmux.conf .
 ```
 
+### FAQ
+1. After YCM installed, why my vim says " YCM error. The ycmd server SHUT DOWN (restart wit…the instructions in the documentation "?
+A: First you should have your pluginInstall finished, then go to $vimConf/bundle/YouCompleteMe
+```
+python install.py
+```
+to see if you have any dependency pack missing.
+After I installed `cmake`, things went well.
+(https://stackoverflow.com/questions/47667119/ycm-error-the-ycmd-server-shut-down-restart-wit-the-instructions-in-the-docu)
